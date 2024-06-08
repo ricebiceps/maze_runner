@@ -15,7 +15,7 @@ class Cell():
     def draw(self, x1,x2,y1,y2):
         if self._win is None:
             return
-            
+
         self._x1 = x1
         self._x2 = x2
         self._y1 = y1
@@ -49,3 +49,6 @@ class Cell():
         
         line = Line(Point(x_center, y_center), Point(x_center2, y_center2))
         self._win.draw_line(line,fill_color)
+    
+    def _break_walls_r(self,i,j):
+        return
